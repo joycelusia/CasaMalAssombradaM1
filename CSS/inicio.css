@@ -8,6 +8,11 @@ body{
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+ 
+}
+.text,  button{
+  font-family: 'Roboto', sans-serif;
 }
 h2{
   color:white;
@@ -27,6 +32,7 @@ h2{
   opacity: 0;
   transition: visibility 0s, opacity 0.5 linear;
   color: antiquewhite;
+  text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .personagem:hover .objetivo{
@@ -38,3 +44,4 @@ button{
   align-content: center;
   flex-direction: row;
 }
+
