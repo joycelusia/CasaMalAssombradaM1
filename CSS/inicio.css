@@ -1,0 +1,26 @@
+body{
+  background-image: url(../Assets/photo.jpg);
+}
+h2{
+  color:white;
+}
+.container{
+
+  display: flex;
+}
+h2{
+  justify-content: center;
+}
+.personagem{
+  width: 500px;
+  color: white;
+}
+
+.objetivo{
+  display: none;
+  color: antiquewhite;
+}
+
+p:hover + .personagem{
+  display: block;
+}
