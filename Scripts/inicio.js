@@ -1,12 +1,6 @@
-function iniciar (){
 
- innerHeight
- 
-  
-}
-
-setTimeout(function escolha(){
-  var personagem =  prompt("Escolha o personagem: \n1- Personagem 1\n2-Personagem 2\n3-Personagem 3");
+function escolha(){
+  var personagem =  prompt("Escolha o personagem: \n1- Richard \n2- Jane\n3- Michael");
   
   if(personagem == 1){
     return location = ("../HTML/richard.html")
@@ -24,4 +18,4 @@ setTimeout(function escolha(){
     alert("Escolha um número de personagem válido!")
    
   }
-}, 3000)
+}

@@ -1,5 +1,11 @@
 body{
   background-image: url(../Assets/photo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.text{
+  width: 700px;
+  margin: auto;
 }
 h2{
   color:white;
@@ -8,19 +14,25 @@ h2{
 
   display: flex;
 }
-h2{
-  justify-content: center;
-}
+
 .personagem{
   width: 500px;
   color: white;
 }
 
 .objetivo{
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5 linear;
   color: antiquewhite;
 }
 
-p:hover + .personagem{
-  display: block;
+.personagem:hover .objetivo{
+  visibility: visible;
+  opacity: 1;
+}
+
+button{
+  align-content: center;
+  flex-direction: row;
 }
