@@ -1,11 +1,13 @@
 body{
-  background-image: url(../Assets/photo.jpg);
+  background-image: url(../Assets/photo2.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .text{
-  width: 700px;
-  margin: auto;
+  width: 700px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
 }
 h2{
   color:white;
