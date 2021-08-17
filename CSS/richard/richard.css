@@ -1,44 +1,21 @@
 body{
-  background-image: url(../Assets/photo2.jpg);
+  background-image: url(../../Assets/4fe616e0-7fe4-49bf-928d-7db562710c63.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
- 
 }
-.text{
+
+#text{
   width: 700px; 
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
-  color:white;
+  font-size: 26px;
   text-shadow: black 0.1em 0.1em 0.2em;
-
+  color:white;
  
 }
-.text,  button{
+#text,  button{
   font-family: 'Roboto', sans-serif;
-}
-
-.container{
-
-  display: flex;
-}
-
-.personagem{
-  width: 500px;
-  color: white;
-}
-
-.objetivo{
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5 linear;
-  color: antiquewhite;
-  text-shadow: black 0.1em 0.1em 0.2em
-}
-
-.personagem:hover .objetivo{
-  visibility: visible;
-  opacity: 1;
 }
 
 button{
@@ -64,5 +41,5 @@ button{
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   vertical-align: middle;
+  
 }
-
