@@ -1,13 +1,15 @@
+
 var texto = document.getElementById("frase");
  var buttom = document.getElementById("botao");
  
-codes
+
  function n1(){
+   console.log("Funcionando");
     var acao1 = prompt("Escolha por onde ir: \n1- Deixar a encomenda na porta\n2- Deixar a encomenda na biblioteca\n3- Deixar a encomenda na sala ")
    
     
     if(acao1 == 1){
-     texto.innerHTML="<p>Muito obrigada, Richard! Bom trabalho. Da próxima vez, você poderia entrar pra tomar um café, que tal? <p/>" 
+     texto.innerHTML="<p>Muito obrigada, Richard! Bom trabalho. Da próxima vez, você poderia entrar pra tomar um café, que tal? </p>" 
      buttom.onclick = location.href("../HTML/game.html");
       
       

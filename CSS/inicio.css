@@ -10,6 +10,7 @@ body{
   margin-right: auto;
   padding-top: 200px;
   color:white;
+  text-align: justify;
   text-shadow: black 0.1em 0.1em 0.2em;
 
  
@@ -39,6 +40,11 @@ body{
 .personagem:hover .objetivo{
   visibility: visible;
   opacity: 1;
+}
+
+.botao{
+  display: flex;
+  justify-content: center;
 }
 
 button{

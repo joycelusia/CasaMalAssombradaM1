@@ -43,3 +43,8 @@ button{
   vertical-align: middle;
   
 }
+
+.botao{
+  display: flex;
+  justify-content: center;
+}
