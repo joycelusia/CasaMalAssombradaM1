@@ -8,4 +8,6 @@ O jogo tem como mecanismo principal de funcionamento as escolhas feitas pelo usu
 jogador, com o personagem escolhido através de toda uma narrativa. Diferentes narrativas e fins podem ser
 implementados para os diferentes personagens jogáveis. A ideia principal é que diversos cenários e escolhas
 resultem em "game over" e alguns poucos resultem em um final de sucesso.
- 
+
+ Desenvolvido por: Joyce Lusia (Grupo 7: Gabriel Bastos, Joyce Lusia, Rafael Soares e Rafael Zelli)
+ Roteiro por: Jéssica Lusia
