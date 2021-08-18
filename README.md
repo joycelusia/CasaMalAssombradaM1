@@ -10,4 +10,5 @@ implementados para os diferentes personagens jogáveis. A ideia principal é que
 resultem em "game over" e alguns poucos resultem em um final de sucesso.
 
  Desenvolvido por: Joyce Lusia (Grupo 7: Gabriel Bastos, Joyce Lusia, Rafael Soares e Rafael Zelli)
+ 
  Roteiro por: Jéssica Lusia
