@@ -1,5 +1,6 @@
 # CasaMalAssombradaM1
-Projeto de conclusão de primeiro modulo, Resilia Educação, Turma 7 (2020)
+Projeto de conclusão de primeiro modulo, Resilia Educação, Turma 7 (2020).
+
 Para o Projeto de finalização do módulo 1, foi proposto para os alunos criar uma página de jogo de RPG, baseada no contéudo estudado durante o módulo. Usando apenas  HTML/CSS/JS.
 Com interações apenas pelo prompt.
 
