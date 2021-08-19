@@ -2,6 +2,7 @@ var texto = document.getElementById("frase");
 var botao = document.getElementById("botao");
 
 function n2QuartoV(){
+  var intervalo= setInterval(() => {
   var act1 = prompt("O que você quer fazer? \n1 - Abrir o guarda-roupa  \n 2 - Olhar para o jardim")
 
   if(act1 == 1){
@@ -17,4 +18,6 @@ function n2QuartoV(){
  else{
    alert("Digite escolha válida")
    return n1Act();
+  }
+  }, 300); 
 }

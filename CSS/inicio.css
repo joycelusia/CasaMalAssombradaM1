@@ -74,18 +74,23 @@ button{
 
 @media (max-width: 600px) {
   .text{
-    width: 80%;
+    width: 100%;
     flex-direction: column;
     overflow: auto;
     font-size: 20px;
   }
 
+  .container{
+    flex-direction: column;
+    margin: 10px;
+  }
+
   .objetivo{
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .botao{
-    font-size: 18px;
+    font-size: 20px;
   }
 
 }
