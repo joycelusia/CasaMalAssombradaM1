@@ -5,13 +5,13 @@ function n1Act(){
   var intervalo= setInterval(() => {
   var act1 = prompt("Escolha por onde ir: \n1 - Procurar o relíquias no porão \n 2 - Explorar Quarto Vermelho")
 
-  if(act1 == 1){
+  if(act1==1){
    texto.innerHTML="Bom, se você desceu até aqui, deve saber muito bem o que quer, não é? O que alguém esconderia algo interessante em um porão como esse? É sempre bom ter cuidado com o que você procura… Mas olhe, uma pilha de documentos atrás daquela ratoeira! Será que está ali o que você quer? ";
    clearInterval(intervalo);
-   return n2Porao;
+   return n2PoraoM;
     
   }
-  else if (act1 == 2){
+  else if (act1==2){
     texto.innerHTML="Toda casa tem seu quarto principal e aqui não é diferente. Temos uma grande cama confortável, um guarda-roupa de madeira maciça, uma janela grande com vista para o jardim… É uma pena que o tempo não tenha sido gentil com esse cômodo e todo o luxo tenha se transformado em mofo…";
     clearInterval(intervalo);
     return n2QuartoV;
@@ -72,7 +72,7 @@ function charles(){
     texto.innerHTML= "Digite opção válida"
     return decisao;
     }
-  }, 3000);
+  }, 300);
 }
 
 function gameOverOver(){

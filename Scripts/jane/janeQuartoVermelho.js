@@ -24,7 +24,7 @@ function n2Quarto(){
     texto.innerHTML= "Digite opção válida"
     return n2Quarto();
    }
-  },3000);  
+  },300);  
 }
 
 function n3Penteadeira(){
@@ -46,6 +46,6 @@ function n3Penteadeira(){
     botao.onclick = gameOverOver;
     clearInterval(intervalo); 
     }
-  }, 3000);
+  }, 300);
 }
 

@@ -29,7 +29,7 @@ var texto = document.getElementById("frase");
       return n1;
     
       }
-   },3000);
+   },300);
   
   }
 
@@ -81,7 +81,7 @@ var texto = document.getElementById("frase");
         texto.innerHTML= "Digite opção válida"
         return decisao;
       }
-    }, 3000);  
+    }, 300);  
   }
 
   
@@ -105,7 +105,7 @@ var texto = document.getElementById("frase");
     buttom.onclick = gameOverOver;  
     clearInterval(intervalo); 
 
-   }, 3000);  
+   }, 300);  
   }
 
 function gameOverOver(){
