@@ -18,7 +18,8 @@ var texto = document.getElementById("frase");
       }
       else if (acao1==2){
         texto.innerHTML="Parece que faz muito tempo que ninguém lê um livro por aqui, não é? Não tem uma superfície sem poeira para que você possa deixar esse pacote. Talvez ali na mesa, junto com as outras caixas? É impressão minha ou essa encomenda se mexeu? ";
-        return n2Biblioteca;
+        clearInterval(intervalo);
+        return n2Biblioteca();
       
         
       }
@@ -48,6 +49,7 @@ var texto = document.getElementById("frase");
 
       else if(acao1==2){
         texto.innerHTML = "Mas já? Tem certeza que não quer dar uma volta antes de seguir com o seu trabalho?";
+        clearInterval(intervalo);
         return decisao;
       }
       else{
@@ -65,11 +67,13 @@ var texto = document.getElementById("frase");
 
       if(acao1==1){
         texto.innerHTML="Uma pausa me faria bem mesmo, o expediente já está terminando, ninguém vai se importar…";
+        clearInterval(intervalo);
         return gameOverPausa;
       }
 
       else if(acao1==2){
         texto.innerHTML=" Seria bom deixar isso aqui e ir logo descansar na minha própria casa…"
+        clearInterval(intervalo);
         return gameOverCasa;
       }
 
@@ -100,7 +104,7 @@ var texto = document.getElementById("frase");
     buttom.value="Jogar novamente";
     buttom.onclick = gameOverOver;  
     clearInterval(intervalo); 
-    
+
    }, 3000);  
   }
 
