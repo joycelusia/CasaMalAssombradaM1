@@ -2,11 +2,12 @@ var texto = document.getElementById("frase");
 var buttom = document.getElementById("botao");
 
 function n1(){
+  var intervalo= setInterval(() => {
   var act1 = prompt("Escolha por onde ir: \n1- Procurar o documento na biblioteca \n 2- Procurar o documento no quarto vermelho")
 
     if(act1==1){
-      texto.innerHTML="Se você veio aqui procurar algum papel velho, aqui tem bastante coisa interessante para você… Talvez você encontre o que precisa e até algo mais  Por onde você quer começar?  "; 
-    return n2Biblioteca();
+      texto.innerHTML="Se você veio aqui procurar algum papel velho, aqui tem bastante coisa interessante para você… Talvez você encontre o que precisa e até algo mais  Por onde você quer começar?  ";
+      return n2Biblioteca();
       
     }
     else if (act1==2){  
@@ -19,10 +20,11 @@ function n1(){
       alert("Digite escolha válida")
       return n1();
     }
-
+  },300);  
 }
 
 function n2Biblioteca(){
+  var intervalo= setInterval(() => {
   var acao1 = prompt("1- Mexer na estante \n 2 - Olhar em cima da mesa")
 
     if (acao1 ==1){
@@ -34,9 +36,11 @@ function n2Biblioteca(){
       texto.innerHTML="Essa mesa precisa de uma faxina… ";
       return olharMesa();
     }
+  }, 300);  
 }
 
 function livros(){
+  var intervalo= setInterval(() => {
   var acao1 = prompt("Que livro você quer olhar?\n1- Folhear “Os Assassinatos na Rua Morgue”\n 2- Folhear “A Maldição da Casa da Colina” ")
 
     if(acao1==1){
@@ -49,14 +53,28 @@ function livros(){
 
     else{
       texto.innerHTML="Digite ação válida";
-      return livros();
+      return livros()
     }
+  }, 300);    
 }
 
 function olharMesa(){
+  var intervalo= setInterval(() => {
   var acao1 = prompt("O que fazer? \n1- Abrir pacote \n 2 - Olhar pilha de papel")
 
   if(acao1==1){
     texto.innerHTML="Eu acho que já vi essa encomenda em algum lugar… Mas o que você fez? Abriu um pacote que não é seu? Dê um olá para o Larry, não seja mal educada! "
-  }
+    }
+    else if(acao1==2){
+      alert("Contas não pagas, cartas não respondidas, panfletos antigos… Quanta coisa acumulada por aqui! Você folheia toda a pilha e encontra um bilhete: SEJA BEM-VINDA À SUA CASA POR TODA A ETERNIDADE");
+      texto.innerHTML="GAMEOVER - A porta da biblioteca se fecha violentamente. Jane tenta correr para a janela, mas as paredes começam a se mover rapidamente, esmagando essa simples corretora de imóveis entre duas estantes";
+      buttom.value="Jogar novamente"
+      buttom.onclick = gameOverOver();  
+      clearInterval(intervalo); 
+    }
+  }, 300); 
+}
+
+function gameOverOver(){
+  return location.href = "../../index.html"
 }

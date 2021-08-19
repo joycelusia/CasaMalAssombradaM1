@@ -1,12 +1,9 @@
 var texto = document.getElementById("frase");
 var botao = document.getElementById("botao");
 
-function textoIntroQuarto(){
-  texto.innerHTML="Toda casa tem seu quarto principal e aqui não é diferente. Temos uma grande cama confortável, uma penteadeira de madeira maciça, uma janela grande com vista para o jardim… É uma pena que o tempo não tenha sido gentil com esse cômodo e todo o luxo tenha se transformado em mofo…"; 
-  return n2Quarto();
-}
 
 function n2Quarto(){
+  var intervalo= setInterval(() => {
   var act1 = prompt("Onde procurar documento? \n1 - Procurar na penteadeira \n 2 - Olhar debaixo da cama ")
 
   if (act1==1){
@@ -20,10 +17,12 @@ function n2Quarto(){
     texto.innerHTML= " Jane olha debaixo da cama. Ali outros olhos a encaram. Repentinamente, uma mulher esquelética vestida de noiva a puxa para debaixo da cama… Quanto tempo será que demora para a imobiliária sentir falta dela?"
     botao.value ="Jogar novamente"
     botao.onclick = gameOver();
-  }
+   }
+  },300);  
 }
 
 function n3Penteadeira(){
+  var intervalo= setInterval(() => {
   var act1 = prompt("O que você quer fazer? \n1-Borrifar Perfume\n2-Procurar Gaveta")
 
   if(act1==1){
@@ -36,9 +35,10 @@ function n3Penteadeira(){
   else if(act==2){
     alert("Olha, por essa eu não esperava! Acho que não era isso que você estava procurando exatamente, mas deve servir para alguma coisa…")
     texto.innerHTML=" Jane encontra um testamento que transfere a posse da propriedade para quem o encontrar. O que ela vai fazer com essa casa? Não sei, mas estou bastante curioso…";
-  }
+    }
+  }, 300);
 }
 
-function gameOver(){
-  return location("../../index.html")
+function gameOverOver(){
+  return location.href="../../index.html"
 }

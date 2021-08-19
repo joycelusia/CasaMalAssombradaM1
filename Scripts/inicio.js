@@ -1,3 +1,4 @@
+alert("Passe o mouse no nome dos personagens para descobrir seu objetivo");
 
 function escolha(){
   var personagem =  prompt("Escolha o personagem: \n1- Richard \n2- Jane\n3- Michael");
