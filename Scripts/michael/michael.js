@@ -29,21 +29,21 @@ function n1Act(){
   var intervalo= setInterval(() => {
    var act1 = prompt("1- Dar uma volta pelo ambiente \n2- Ver pilha de documentos ")
 
-   if(act1==2){
+   if(act1==1){
      texto.innerHTML="Eu adoro um tour! Esse é meu lugar favorito aqui. Sinta todo esse cheiro de… criatividade! Essas máquinas demoraram muito tempo para serem criadas… Tudo em nome da ciência e do progresso. Doutor Charles é muito orgulhoso do seu trabalho!";
      clearInterval(intervalo);
-     return charles;
+     return charles();
    }
    else if(act1==2){
      alert("O que temos aqui? Prontuários médicos, certidões de nascimento, certidões de óbit… Todos assinados pelo Doutor Charles Montgomery. Nossa, esse homem deve trabalhar muito mesmo…");
      texto.innerHTML="Michael se vira e dá de cara com Charles. Ele veste um jaleco ensanguentado e segura um bisturi. Agarra Michael pelo pescoço e a prende em uma maca de dentista… Um tanto mais macabra, digamos. Vai ser um dia divertido por aqui!";
-     buttom.value="Jogar novamente";
-    buttom.onclick = gameOverOver();  
+    botao.value="Jogar novamente";
+    botao.onclick = gameOverOver();  
     clearInterval(intervalo);
    }
    else{
     texto.innerHTML= "Digite opção válida"
-    return decisao();
+    return n2PoraoM();
     }
   }, 300); 
 }
@@ -55,27 +55,27 @@ function charles(){
   if(acao1==1){
     alert("Você nunca ouviu falar do Doutor Charles Montgomery? Em que mundo você vive… Doutor Montgomery foi… Ah, é melhor você conhecê-lo pessoalmente… Olhe, bem atrás de você!");
     texto.innerHTML=" Michael se vira e dá de cara com Charles. Ele veste um jaleco ensanguentado e segura um bisturi. Agarra Michael pelo pescoço e a prende em uma maca de dentista… Um tanto mais macabra, digamos. Vai ser um dia divertido por aqui!";
-    buttom.value="Jogar novamente";
-    buttom.onclick = gameOverOver();  
+    botao.value="Jogar novamente";
+    botao.onclick = gameOverOver();  
     clearInterval(intervalo); 
   }
 
   else if(acao1==2){
     alert("Mas você já vai? E a? Você vai sair daqui com as mãos abanando? O que você vai postar hoje? Tem certeza que não quer gerar esse conteúdo?");
     texto.innerHTML="Michael consegue sair correndo da casa sem fotos e sem souvenirs. Tomara que ele logo poste um comentário e traga mais curiosos para cá!";
-    buttom.value="Jogar novamente";
-    buttom.onclick = gameOverOver();  
+    botao.value="Jogar novamente";
+    botao.onclick = gameOverOver();  
     clearInterval(intervalo); 
   }
 
   else{
     texto.innerHTML= "Digite opção válida"
-    return decisao();
+    return charles();
     }
   }, 300);
 }
 
 function gameOverOver(){
   texto.innerHTML="GAME OVER";
-  buttom.onclick=location.href = "../../index.html";
+  botao.onclick=location.href = "../../index.html";
 }
