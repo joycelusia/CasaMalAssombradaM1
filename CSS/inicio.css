@@ -1,9 +1,9 @@
 body{
   background-image: url(../Assets/photo2.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
- 
+  background-size: cover; 
 }
+
 .text{
   width: 700px; 
   margin-left: auto;
@@ -72,3 +72,20 @@ button{
   vertical-align: middle;
 }
 
+@media (max-width: 600px) {
+  .text{
+    width: 100%;
+    flex-direction: column;
+    overflow: auto;
+    font-size: 20px;
+  }
+
+  .objetivo{
+    font-size: 15px;
+  }
+
+  .botao{
+    font-size: 18px;
+  }
+
+}

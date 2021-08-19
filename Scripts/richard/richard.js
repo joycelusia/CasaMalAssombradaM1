@@ -54,7 +54,7 @@ var texto = document.getElementById("frase");
         texto.innerHTML= "Digite opção válida"
         return n2Biblioteca();
       }
-     }, 300);
+     }, 3000);
     }
 
 
