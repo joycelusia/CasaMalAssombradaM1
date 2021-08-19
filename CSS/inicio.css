@@ -73,20 +73,27 @@ button{
 }
 
 @media (max-width: 600px) {
+  
   .text{
     width: 100%;
     flex-direction: column;
-    overflow: auto;
+    overflow: hidden;
     font-size: 20px;
   }
 
   .container{
     flex-direction: column;
     margin: 10px;
-  }
+    }
 
+  .personagem{
+    text-align: justify;
+    width: 100%;
+    
+  }
   .objetivo{
-    font-size: 20px;
+    font-size: 18px;
+    word-wrap: break-word;
   }
 
   .botao{
