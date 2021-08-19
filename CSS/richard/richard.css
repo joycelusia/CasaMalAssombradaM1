@@ -1,7 +1,7 @@
 body{
   background-image: url(../../Assets/4fe616e0-7fe4-49bf-928d-7db562710c63.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #text{
@@ -47,4 +47,22 @@ button{
 .botao{
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 600px) {
+  body{
+    display: block;
+    overflow: auto;
+    background-size: cover;
+    height: 100vh
+  }
+  #text{
+    width: 80%;
+    
+  }
+
+  .frase{
+    font-size: 30px;
+  }
+  
 }

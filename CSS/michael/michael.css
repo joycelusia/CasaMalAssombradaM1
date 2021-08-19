@@ -42,3 +42,21 @@ button{
   text-decoration: none;
   vertical-align: middle;
 }
+
+@media (max-width: 600px) {
+  body{
+    display: block;
+    overflow: auto;
+    background-size: cover;
+    height: 100vh
+  }
+  #text{
+    width: 80%;
+    
+  }
+
+  .frase{
+    font-size: 30px;
+  }
+  
+}
