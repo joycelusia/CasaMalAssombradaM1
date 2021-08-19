@@ -39,7 +39,7 @@ function n3Penteadeira(){
     clearInterval(intervalo);  
   }
 
-  else if(act==2){
+  else if(act1==2){
     alert("Olha, por essa eu não esperava! Acho que não era isso que você estava procurando exatamente, mas deve servir para alguma coisa…")
     texto.innerHTML=" Jane encontra um testamento que transfere a posse da propriedade para quem o encontrar. O que ela vai fazer com essa casa? Não sei, mas estou bastante curioso…";
     botao.value= "Jogar novamente"
