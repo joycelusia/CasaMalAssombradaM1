@@ -36,10 +36,10 @@ function n1Act(){
    }
    else if(act1==2){
      alert("O que temos aqui? Prontuários médicos, certidões de nascimento, certidões de óbit… Todos assinados pelo Doutor Charles Montgomery. Nossa, esse homem deve trabalhar muito mesmo…");
-     texto.innerHTML="Michael se vira e dá de cara com Charles. Ele veste um jaleco ensanguentado e segura um bisturi. Agarra Michael pelo pescoço e a prende em uma maca de dentista… Um tanto mais macabra, digamos. Vai ser um dia divertido por aqui!";
-    botao.value="Jogar novamente";
-    botao.onclick = gameOverOver();  
-    clearInterval(intervalo);
+     texto.innerHTML="Michael se vira e dá de cara com Charles. Ele veste um jaleco ensanguentado e segura um bisturi. Agarra Michael pelo pescoço e a prende em uma maca de dentista… Um tanto mais macabra, digamos. Vai ser um dia divertido por aqui!"; 
+     botao.value="Jogar novamente";
+     botao.onclick = gameOverOver();  
+     clearInterval(intervalo);
    }
    else{
     texto.innerHTML= "Digite opção válida"
@@ -65,7 +65,7 @@ function charles(){
     texto.innerHTML="Michael consegue sair correndo da casa sem fotos e sem souvenirs. Tomara que ele logo poste um comentário e traga mais curiosos para cá!";
     botao.value="Jogar novamente";
     botao.onclick = gameOverOver();  
-    clearInterval(intervalo); 
+    clearInterval(intervalo);
   }
 
   else{
